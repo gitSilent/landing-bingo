@@ -33,7 +33,9 @@ span {
 
 body {
     font-family: 'Rubik';
-    background-color: white;
+    /* background-color: #e7e2dc; */
+    background-color: #f0f0eb;
+
     /* background-color: #e4e2e0; */
 }
 
@@ -336,7 +338,7 @@ main {
 }
 
 .sale-cont__img-bg{
-    object-fit: cover;
+    /* object-fit: cover; */
     position: absolute;
     z-index: 0;
     width: 1200px;
@@ -379,11 +381,16 @@ main {
 
 .month-game{
     margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 .month-game__left{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
     width: fit-content;
     width: 570px;
 }
@@ -413,4 +420,247 @@ main {
 
 .select_active{
     background-color: #f5d467;
+}
+.month-game__right{
+    display: flex;
+    flex-direction: column;
+}
+
+.month-game__right__header{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.month-game__right__header .label-cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: #e1fafc;
+    border-radius:15px;
+    padding: 10px 20px 10px 20px;
+    
+}
+
+.month-game__right__header .label-cont img{
+    width: 25px;
+}
+
+.month-game__right__header .rating-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.month-game__rating-cont_img{
+    width: 20px;
+}
+
+.month-game__right h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.month-game__right p{
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+.month-game__right .game-specs-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.month-game__right .game-specs-cont .spec-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.game-ordering-cont{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.game-ordering-cont__price{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.to-cart_btn{
+    padding: 15px 25px 15px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff6118;
+    color: white;
+    font-weight: 500;
+    font-family: 'Rubik';
+}
+
+
+/* FORM SECTION */
+
+.form-section{
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    /* background-color: #e7e2dc; */
+    padding-top: 200px;
+    display: flex;
+    gap: 150px;
+    flex-direction: row;
+    /* height: fit-content; */
+    background-image: url('./media/img/waves_footer.png');
+    /* background-color: #f0f0eb; */
+    background-repeat: no-repeat;
+}
+
+.form-seciton__left{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    width: 540px
+}
+
+.form-seciton__left h2{
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+.form-seciton__left p{
+    font-weight: 300;
+}
+
+.form-shapes-cont{
+    position: relative;
+}
+.form-shapes-cont__shape{
+    position: absolute;
+}
+
+.form-shapes-cont span{
+    position: absolute;
+    font-size: 20px;
+}
+
+
+
+.form-seciton__right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+.input-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input-cont span{
+    color: rgb(131, 131, 131);
+    font-weight: 300;
+}
+.input-cont input{
+    background-color: #f0f0eb;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+}
+
+.choose-lvl-span{
+    font-weight: 300;
+}
+.difficult-levels-cont{
+    font-weight: 300;
+}
+
+.difficult-levels-cont fieldset{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: none;
+}
+.difficult-levels-cont fieldset input{
+    height: 19px;
+    width: 19px;
+    background-color: #e7e2dc;
+    margin: 0;
+    padding: 0;
+
+}
+
+.difficult-lvl-cont input::before{
+    background: black;
+}
+
+.difficult-lvl-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.personal-data-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    font-weight: 300;
+}
+
+.personal-data-cont input{
+    height: 19px;
+    width: 19px;
+    border-radius: 25px;
+}
+.buy-ticket-btn{
+    padding: 17px 25px 17px 25px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ff6118;
+    color: white;
+    font-weight: 500;
+    font-family: 'Rubik';
+    width: 200px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 150px;
+    height: 150px;
+    background-color: #dfd9d2;
+    width: 1200px;
+    margin: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 300;
+}
+footer a{
+    text-decoration: underline;
+}
+
+footer .icons-cont{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
