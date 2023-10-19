@@ -17,6 +17,14 @@
     src: url('./media/fonts/Rubik-Bold.ttf');
 }
 
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
 body,
 div,
 h1,
@@ -47,7 +55,9 @@ a {
 
 header {
     height: 600px;
-    width: 1200px;
+    /* width: 1200px; */
+    position: relative;
+    width: 100%;
     position: relative;
     background-color: #e7e2dc;
     margin-top: auto;
@@ -66,6 +76,20 @@ header .logo {
     padding: 22px 30px 22px 30px;
     align-items: center;
     width: 100%;
+}
+
+.header-line__menu-icon{
+    width: 30px;
+    height: 30px;
+    /* display: block; */
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    display: none;
+}
+.header-line__menu-icon img{
+    width: 100%;
+    height: 100%;
 }
 
 nav {
@@ -94,6 +118,12 @@ nav {
     text-align: center;
     gap: 20px;
 
+}
+.header-content__main-text,.header-content__desc,.header-content__btn-catalog {
+    z-index: 10;
+}
+.header-content__star-icon, .header-content__flower-icon{
+    z-index: 5;
 }
 
 .header-content__main-text {
@@ -137,9 +167,15 @@ nav {
 
 /* MAIN CONTENT */
 main {
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
+    background-color: #f0f0eb;
+
+}
+.about-section{
+    width: 100%;
 }
 
 .about-div {
@@ -165,13 +201,15 @@ main {
 }
 
 .about-div__img {
-    width: 530px;
-    height: 400px;
+    max-width: 530px;
+    max-height: 400px;
+    width: 45%;
 }
 
 .about-div__cards {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 35px;
     padding-left: 90px;
     padding-right: 90px;
@@ -646,7 +684,8 @@ footer{
     margin-top: 150px;
     height: 150px;
     background-color: #dfd9d2;
-    width: 1200px;
+    /* max-width: 1200px; */
+    width: 100%;
     margin: auto;
     padding-left: 150px;
     padding-right: 150px;
@@ -663,4 +702,103 @@ footer .icons-cont{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+
+@media screen and (max-width: 980px) {
+    .header-line{
+        display: none;
+    }
+    header{
+        padding-top:50px;
+    }
+    .header-line__menu-icon{
+        display: block;
+    }
+    .about-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-div {
+        padding: 50px 10px 10px 10px;
+    }
+    .about-div__text {
+        min-width: 250px;
+        width: 90% !important;
+    }
+    .about-div p {
+        /* min-width:300px;
+        max-width: 400px !important; */
+    }
+    .about-div img {
+        width: 95% !important;
+        min-width: 250px !important;
+        /* max-width: 530px;
+        max-height: 400px;
+        width: 45%; */
+    }
+    .about-div__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards__card{
+        min-width: 250px;
+        max-width: 280px;
+        width: 90%;
+    }
+
+    .bingo-bongo__desc__cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bingo-bongo {
+        height: 100%;
+        padding: 50px 10px 10px 50px;
+    }
+    .fav-games-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .favorite-games {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fav-games__sub-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sleepyjoe-card{
+        height: 200px;
+    }
+    .sale-cont{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .sale-cont__desc{
+        position: static;
+
+    }
+    .sale-cont img, .sale-50 {
+        display: none;  
+    }
+    .month-game{
+        flex-direction: column;
+    }
+    .form-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form-seciton__right{
+        margin-top: 250px;
+    }
+    footer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
