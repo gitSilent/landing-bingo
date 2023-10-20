@@ -1,313 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Бинго Бонго</title>
-        <link rel="stylesheet" href="./styles.min.css" />
-    </head>
 
-    <body>
-        <header>
-            <div class="header-line__menu-icon">
-                <img src="./media/img/menu-icon.svg" alt="">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бинго Бонго</title>
+    <link rel="stylesheet" href="./styles.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-line__menu-icon">
+            <img src="./media/img/menu-icon.svg" alt="">
+        </div>
+        <div class="header-line">
+            <img class="logo" src="./media/img/logotype.png" alt="" />
+            <nav>
+                <a href="#about">О нас</a>
+                <a href="#catalog">Каталог</a>
+                <a href="#popular_games">Популярные игры</a>
+                <a href="#month_game">Игра месяца</a>
+                <a href="#igroteka">Игротеки</a>
+            </nav>
+            <div class="interact-icons">
+                <img src="./media/img/search.svg" alt="" />
+                <img src="./media/img/profile.svg" alt="" />
+                <img src="./media/img/cart.svg" alt="" />
             </div>
-            <div class="header-line">
-                <img class="logo" src="./media/img/logotype.png" alt="" />
-                <nav>
-                    <a href="">О нас</a>
-                    <a href="">Каталог</a>
-                    <a href="">Популярные игры</a>
-                    <a href="">Игра месяца</a>
-                    <a href="">Игротеки</a>
-                </nav>
-                <div class="interact-icons">
-                    <img src="./media/img/search.svg" alt="" />
-                    <img src="./media/img/profile.svg" alt="" />
-                    <img src="./media/img/cart.svg" alt="" />
+        </div>
+        <div class="header-content">
+            <img class="header-content__star-icon" src="./media/img/star-main.svg" alt="" />
+            <img class="header-content__flower-icon" src="./media/img/flower-main.svg" alt="" />
+            <p class="header-content__main-text">
+                Настольные игры <br />
+                <span>для любой компании</span>
+            </p>
+            <p class="header-content__desc">
+                Самые популярные игры для детей и взрослых <br />
+                с бесплатной доставкой по всему миру
+            </p>
+            <button class="header-content__btn-catalog btn_primary">Смотреть каталог</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="about-section">
+            <div class="about-div">
+                <div class="about-div__text">
+                    <h2>О нас</h2>
+                    <p>
+                        Бинго Бонго – это место, где каждый найдет игру себе по душе. Спортивные, логические,
+                        стратегические, развивающие и очень веселые игры – широкий ассортимент нашего магазина никого не
+                        оставит равнодушным. <br /><br />
+                        Офлайн-магазины Бинго Бонго находятся в 40 крупнейших городах России. Сомневаетесь, какую игру
+                        выбрать? Приходите в магазин и наши консультанты подскажут, сыграют с вами партию, и вы поймете,
+                        какая игра вам подходит больше
+                        всего.<br />
+                        <br />
+                        Также Бинго Бонго регулярно проводит мероприятия и игротеки, где вы можете поиграть в любые игры
+                        из нашего ассортимента, познакомиться с новыми людьми, интересно и весело провести время в
+                        приятной компании.
+                    </p>
+                </div>
+                <img class="about-div__img" src="./media/img/game.png" alt="" />
+            </div>
+
+            <div class="about-div__cards">
+                <div class="cards__card card-1">
+                    <h3>Для детей</h3>
+                    <p>Более 100 видов развивающих игр для детей возрастом от 6 месяцев</p>
+                    <img src="./media/img/magictrain.jpg" alt="" />
+                </div>
+
+                <div class="cards__card card-2">
+                    <h3>Для взрослых</h3>
+                    <p>Стратегические, логические, простые веселые игры для любой компании</p>
+                    <img src="./media/img/wildgames.png" alt="" />
+                </div>
+
+                <div class="cards__card card-3">
+                    <h3>Для детей</h3>
+                    <p>Более 100 видов развивающих игр для детей возрастом от 6 месяцев</p>
+                    <img src="./media/img/tres.png" alt="" />
                 </div>
             </div>
-            <div class="header-content">
-                <img class="header-content__star-icon" src="./media/img/star-main.svg" alt="" />
-                <img class="header-content__flower-icon" src="./media/img/flower-main.svg" alt="" />
-                <p class="header-content__main-text">
-                    Настольные игры <br />
-                    <span>для любой компании</span>
-                </p>
-                <p class="header-content__desc">
-                    Самые популярные игры для детей и взрослых <br />
-                    с бесплатной доставкой по всему миру
-                </p>
-                <button class="header-content__btn-catalog">Смотреть каталог</button>
-            </div>
-        </header>
+        </section>
 
-        <main>
-            <section class="about-section">
-                <div class="about-div">
-                    <div class="about-div__text">
-                        <h2>О нас</h2>
-                        <p>
-                            Бинго Бонго – это место, где каждый найдет игру себе по душе. Спортивные, логические, стратегические, развивающие и очень веселые игры – широкий ассортимент нашего магазина никого не оставит равнодушным. <br /><br />
-                            Офлайн-магазины Бинго Бонго находятся в 40 крупнейших городах России. Сомневаетесь, какую игру выбрать? Приходите в магазин и наши консультанты подскажут, сыграют с вами партию, и вы поймете, какая игра вам подходит больше
-                            всего.<br />
-                            <br />
-                            Также Бинго Бонго регулярно проводит мероприятия и игротеки, где вы можете поиграть в любые игры из нашего ассортимента, познакомиться с новыми людьми, интересно и весело провести время в приятной компании.
-                        </p>
-                    </div>
-                    <img class="about-div__img" src="./media/img/game.png" alt="" />
-                </div>
-
-                <div class="about-div__cards">
-                    <div class="cards__card card-1">
-                        <h3>Для детей</h3>
-                        <p>Более 100 видов развивающих игр для детей возрастом от 6 месяцев</p>
-                        <img src="./media/img/magictrain.jpg" alt="" />
-                    </div>
-
-                    <div class="cards__card card-2">
-                        <h3>Для взрослых</h3>
-                        <p>Стратегические, логические, простые веселые игры для любой компании</p>
-                        <img src="./media/img/wildgames.png" alt="" />
-                    </div>
-
-                    <div class="cards__card card-3">
-                        <h3>Для детей</h3>
-                        <p>Более 100 видов развивающих игр для детей возрастом от 6 месяцев</p>
-                        <img src="./media/img/tres.png" alt="" />
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="bingo-bongo">
-                    <div class="bingo-bongo__desc">
-                        <h2>БИНГО БОНГО</h2>
-                        <p>
-                            Самый популярный магазин настольных игр в России <br />
-                            в 2021 году по рейтингу журнала GiGiGame
-                        </p>
-                        <div class="bingo-bongo__desc__cards">
-                            <div class="bingo-bongo__card">
-                                <img class="bingo-bongo__card__img" src="./media/img/car.svg" alt="" />
-                                <span style="left: 12px; top: 12px; text-align: left"
-                                    >Быстрая <br />
-                                    доставка</span
-                                >
-                            </div>
-                            <div class="bingo-bongo__card">
-                                <img class="bingo-bongo__card__img" src="./media/img/ticket.svg" alt="" />
-                                <span style="left: 35px; top: 42px; text-align: center"
-                                    >Регулярные<br />
-                                    игротеки</span
-                                >
-                            </div>
-                            <div class="bingo-bongo__card">
-                                <img class="bingo-bongo__card__img" src="./media/img/star.svg" alt="" />
-                                <span style="left: 29px; top: 62px; text-align: center">Эксклюзивные<br />игры </span>
-                            </div>
-                            <div class="bingo-bongo__card">
-                                <img class="bingo-bongo__card__img" src="./media/img/cloud.svg" alt="" />
-                                <span style="left: 36px; top: 52px; text-align: center">Широкий<br />ассортимент </span>
-                            </div>
-                            <div class="bingo-bongo__card">
-                                <img class="bingo-bongo__card__img" src="./media/img/wallet.svg" alt="" />
-                                <span style="left: 19px; bottom: 25px; text-align: left">Удобная<br />оплата </span>
-                            </div>
+        <section id="catalog">
+            <div class="bingo-bongo">
+                <div class="bingo-bongo__desc">
+                    <h2>БИНГО БОНГО</h2>
+                    <p>
+                        Самый популярный магазин настольных игр в России <br />
+                        в 2021 году по рейтингу журнала GiGiGame
+                    </p>
+                    <div class="bingo-bongo__desc__cards">
+                        <div class="bingo-bongo__card">
+                            <img class="bingo-bongo__card__img" src="./media/img/car.svg" alt="" />
+                            <span style="left: 12px; top: 12px; text-align: left">Быстрая <br />
+                                доставка</span>
+                        </div>
+                        <div class="bingo-bongo__card">
+                            <img class="bingo-bongo__card__img" src="./media/img/ticket.svg" alt="" />
+                            <span style="left: 35px; top: 42px; text-align: center">Регулярные<br />
+                                игротеки</span>
+                        </div>
+                        <div class="bingo-bongo__card">
+                            <img class="bingo-bongo__card__img" src="./media/img/star.svg" alt="" />
+                            <span style="left: 29px; top: 62px; text-align: center">Эксклюзивные<br />игры </span>
+                        </div>
+                        <div class="bingo-bongo__card">
+                            <img class="bingo-bongo__card__img" src="./media/img/cloud.svg" alt="" />
+                            <span style="left: 36px; top: 52px; text-align: center">Широкий<br />ассортимент </span>
+                        </div>
+                        <div class="bingo-bongo__card">
+                            <img class="bingo-bongo__card__img" src="./media/img/wallet.svg" alt="" />
+                            <span style="left: 19px; bottom: 25px; text-align: left">Удобная<br />оплата </span>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="fav-games-section">
-                <div class="favorite-games">
+        <section id="popular_games" class="fav-games-section">
+            <div class="favorite-games">
+                <h2>
+                    Любимые игры <br />
+                    покупателей
+                </h2>
+                <div class="favorite-games__cont">
+                    <div class="favorite-games__card" style="border-radius: 30px 30px 10px 170px; width: fit-content">
+                        <h3 style="padding-top: 20px; padding-bottom: 20px; margin-bottom: -80px">Дино</h3>
+                        <img src="./media/img/dino.png" alt="" />
+                    </div>
+
+                    <div class="fav-games__sub-cont" style="display: flex; gap: 50px">
+                        <div class="favorite-games__card"
+                            style="position: relative; width: 250px; border-radius: 100%; height: 250px">
+                            <h3 style="text-align: center; margin-top: 25px">Поиск <br />сокровищ</h3>
+                            <img style="position: absolute; bottom: 0; width: 160px" src="./media/img/treasurehunt.png"
+                                alt="" />
+                        </div>
+                        <div class="favorite-games__card sleepyjoe-card"
+                            style="position: relative; width: 250px; border-radius: 50px; padding: 20px">
+                            <h3>Спящий Джо</h3>
+                            <img style="height: 200px; position: absolute; bottom: 0" src="./media/img/sleepyjoe.png"
+                                alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="sale-cont">
+                <div class="sale-cont__desc">
+                    <div class="sale-50">
+                        <img src="./media/img/heart.svg" alt="" />
+                        <span>Скидки <br />
+                            до 50%</span>
+                    </div>
                     <h2>
-                        Любимые игры <br />
-                        покупателей
+                        Распродажа <br />
+                        детских игр
                     </h2>
-                    <div class="favorite-games__cont">
-                        <div class="favorite-games__card" style="border-radius: 30px 30px 10px 170px; width: fit-content">
-                            <h3 style="padding-top: 20px; padding-bottom: 20px; margin-bottom: -80px">Дино</h3>
-                            <img src="./media/img/dino.png" alt="" />
-                        </div>
-
-                        <div class="fav-games__sub-cont" style="display: flex; gap: 50px">
-                            <div class="favorite-games__card" style="position: relative; width: 250px; border-radius: 100%; height: 250px">
-                                <h3 style="text-align: center; margin-top: 25px">Поиск <br />сокровищ</h3>
-                                <img style="position: absolute; bottom: 0; width: 160px" src="./media/img/treasurehunt.png" alt="" />
-                            </div>
-                            <div class="favorite-games__card sleepyjoe-card" style="position: relative; width: 250px; border-radius: 50px; padding: 20px">
-                                <h3>Спящий Джо</h3>
-                                <img style="height: 200px; position: absolute; bottom: 0" src="./media/img/sleepyjoe.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        Порадуйте своего ребенка новой настольной игрой! <br />
+                        Успейте приобрести, акция действует до 30 ноября.
+                    </p>
+                    <button class="header-content__btn-catalog btn_primary">Смотреть каталог</button>
                 </div>
-            </section>
-
-            <section>
-                <div class="sale-cont">
-                    <div class="sale-cont__desc">
-                        <div class="sale-50">
-                            <img src="./media/img/heart.svg" alt="" />
-                            <span
-                                >Скидки <br />
-                                до 50%</span
-                            >
-                        </div>
-                        <h2>
-                            Распродажа <br />
-                            детских игр
-                        </h2>
-                        <p>
-                            Порадуйте своего ребенка новой настольной игрой! <br />
-                            Успейте приобрести, акция действует до 30 ноября.
-                        </p>
-                        <button class="header-content__btn-catalog">Смотреть каталог</button>
-                    </div>
-                    <img class="sale-cont__img-bg" src="./media/img/photo.png" alt="" />
-                </div>
-            </section>
-
-            <section>
-                <div class="month-game">
-                    <div class="month-game__left">
-                        <img src="./media/img/town.png" alt="" />
-                        <div class="month-game__select">
-                            <div class="select__item select_active">Описание</div>
-                            <div class="select__item">Правила игры</div>
-                            <div class="select__item">Отзывы</div>
-                        </div>
-
-                        <p>
-                            Новое исполнение всем полюбившейся градостроительной игры. На этот раз создатели подумали об игроках всех возрастов. Регулируйте уровень сложности и играйте в любой компании. Самые простые правила позволяют играть даже
-                            детям от 6 лет.
-                            <br /><br />
-                            Компании взрослых игроков будет интересно, если усложнить игру, причем в «Город» могут играть как 3 человека, так и группа больше, до 20 человек. Это не просто игра, которая увлечет вас не на один вечер. Она развивает
-                            критическое мышление, учит договариваться, искать компромиссы, находить нестандартные решения проблемы.
-                        </p>
-                    </div>
-                    <div class="month-game__right">
-                        <div class="month-game__right__header">
-                            <div class="label-cont">
-                                <img src="./media/img/cubes.png" alt="" />
-                                <span>Игра месяца</span>
-                            </div>
-                            <div class="rating-cont">
-                                <img class="month-game__rating-cont_img" src="./media/img/star.svg" alt="" />
-                                <span>4.98</span>
-                            </div>
-                        </div>
-
-                        <h2>Город</h2>
-
-                        <p>
-                            Новое исполнение всем полюбившейся градостроительной игры. На этот раз создатели подумали об игроках всех возрастов. Регулируйте уровень сложности и играйте в любой компании. Самые простые правила позволяют играть даже
-                            детям от 6 лет. Компании взрослых игроков будет интересно, если усложнить игру, причем в «Город» могут играть как 3 человека, так и группа больше, до 20 человек. Это не просто игра, которая увлечет вас не на один вечер.
-                            Она развивает критическое мышление, учит договариваться, искать компромиссы, находить нестандартные решения проблемы.
-                        </p>
-
-                        <div class="game-specs-cont">
-                            <div class="spec-cont">
-                                <img src="./media/img/age.png" alt="" />
-                                <span>Для возраста от 6 лет</span>
-                            </div>
-                            <div class="spec-cont">
-                                <img src="./media/img/group.png" alt="" />
-                                <span>3-20 игроков</span>
-                            </div>
-                            <div class="spec-cont">
-                                <img src="./media/img/time.png" alt="" />
-                                <span>Партия 2 часа</span>
-                            </div>
-                        </div>
-
-                        <div class="game-ordering-cont">
-                            <span class="game-ordering-cont__price"> 1990 Р </span>
-                            <button class="to-cart_btn">Добавить в корзину</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="form-section">
-                    <div class="form-seciton__left">
-                        <h2>
-                            Октябрьская <br />
-                            игротека
-                        </h2>
-                        <p>Приглашаем вас на увлекательную игротеку от Бинго Бонго! Приходите сами, приводите друзей и семью. Мы обещаем - будет очень весело!</p>
-
-                        <div class="form-shapes-cont">
-                            <div style="width: 150px; top: 50px" class="form-shapes-cont__shape">
-                                <img src="./media/img/cloud.svg" alt="" />
-                                <span style="left: 50px; top: 70px">3 ноября</span>
-                            </div>
-                            <div style="left: 200px" class="form-shapes-cont__shape">
-                                <img src="./media/img/fire.svg" alt="" />
-                                <span style="left: 50px; top: 90px"
-                                    >Билет <br />
-                                    300 Р</span
-                                >
-                            </div>
-                            <div style="top: 90px; right: 15px" class="form-shapes-cont__shape">
-                                <img src="./media/img/rhomb.svg" alt="" />
-                                <span style="left: 54px; top: 43px">15:00</span>
-                            </div>
-                            <div style="top: 200px; right: 110px" class="form-shapes-cont__shape">
-                                <img src="./media/img/arrow.svg" alt="" />
-                                <span style="left: 34px; top: 57px; transform: rotate(-15deg)">ТЦ "Гига", Москва</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-seciton__right">
-                        <div class="input-cont">
-                            <span>Имя</span>
-                            <input type="text" />
-                        </div>
-                        <div class="input-cont">
-                            <span>Телефон</span>
-                            <input placeholder="+7 ___ ___ __ __" type="text" />
-                        </div>
-                        <div class="input-cont">
-                            <span>E-mail</span>
-                            <input type="text" />
-                        </div>
-                        <span class="choose-lvl-span">Выберите свой игровой уровень</span>
-                        <div class="difficult-levels-cont">
-                            <fieldset id="group">
-                                <div class="difficult-lvl-cont">
-                                    <input type="radio" name="group" />
-                                    <span>Новичок</span>
-                                </div>
-                                <div class="difficult-lvl-cont">
-                                    <input type="radio" name="group" />
-                                    <span>Любитель</span>
-                                </div>
-                                <div class="difficult-lvl-cont">
-                                    <input type="radio" name="group" />
-                                    <span>Профессионал</span>
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="personal-data-cont">
-                            <input type="checkbox" />
-                            <span>Я согласен на обработку персональных данных</span>
-                        </div>
-                        <button class="buy-ticket-btn">Купить билет</button>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <span>Бинго Бонго © 2021 Все права защищены</span>
-            <div class="icons-cont">
-                <img src="./media/img/facebook.svg" alt="" />
-                <img src="./media/img/vk.svg" alt="" />
-                <img src="./media/img/instagram.svg" alt="" />
+                <img class="sale-cont__img-bg" src="./media/img/photo.png" alt="" />
             </div>
-            <a href="#">Политика конфеденциальности</a>
-        </footer>
-    </body>
+        </section>
+
+        <section id="month_game">
+            <div class="month-game">
+                <div class="month-game__left">
+                    <img src="./media/img/town.png" alt="" />
+                    <div class="month-game__select">
+                        <div class="select__item select_active">Описание</div>
+                        <div class="select__item">Правила игры</div>
+                        <div class="select__item">Отзывы</div>
+                    </div>
+
+                    <p>
+                        Новое исполнение всем полюбившейся градостроительной игры. На этот раз создатели подумали об
+                        игроках всех возрастов. Регулируйте уровень сложности и играйте в любой компании. Самые простые
+                        правила позволяют играть даже
+                        детям от 6 лет.
+                        <br /><br />
+                        Компании взрослых игроков будет интересно, если усложнить игру, причем в «Город» могут играть
+                        как 3 человека, так и группа больше, до 20 человек. Это не просто игра, которая увлечет вас не
+                        на один вечер. Она развивает
+                        критическое мышление, учит договариваться, искать компромиссы, находить нестандартные решения
+                        проблемы.
+                    </p>
+                </div>
+                <div class="month-game__right">
+                    <div class="month-game__right__header">
+                        <div class="label-cont">
+                            <img src="./media/img/cubes.png" alt="" />
+                            <span>Игра месяца</span>
+                        </div>
+                        <div class="rating-cont">
+                            <img class="month-game__rating-cont_img" src="./media/img/star.svg" alt="" />
+                            <span>4.98</span>
+                        </div>
+                    </div>
+
+                    <h2>Город</h2>
+
+                    <p>
+                        Новое исполнение всем полюбившейся градостроительной игры. На этот раз создатели подумали об
+                        игроках всех возрастов. Регулируйте уровень сложности и играйте в любой компании. Самые простые
+                        правила позволяют играть даже
+                        детям от 6 лет. Компании взрослых игроков будет интересно, если усложнить игру, причем в «Город»
+                        могут играть как 3 человека, так и группа больше, до 20 человек. Это не просто игра, которая
+                        увлечет вас не на один вечер.
+                        Она развивает критическое мышление, учит договариваться, искать компромиссы, находить
+                        нестандартные решения проблемы.
+                    </p>
+
+                    <div class="game-specs-cont">
+                        <div class="spec-cont">
+                            <img src="./media/img/age.png" alt="" />
+                            <span>Для возраста от 6 лет</span>
+                        </div>
+                        <div class="spec-cont">
+                            <img src="./media/img/group.png" alt="" />
+                            <span>3-20 игроков</span>
+                        </div>
+                        <div class="spec-cont">
+                            <img src="./media/img/time.png" alt="" />
+                            <span>Партия 2 часа</span>
+                        </div>
+                    </div>
+
+                    <div class="game-ordering-cont">
+                        <span class="game-ordering-cont__price"> 1990 Р </span>
+                        <button class="to-cart_btn btn_primary">Добавить в корзину</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="igroteka">
+            <div class="form-section">
+                <div class="form-seciton__left">
+                    <h2>
+                        Октябрьская <br />
+                        игротека
+                    </h2>
+                    <p>Приглашаем вас на увлекательную игротеку от Бинго Бонго! Приходите сами, приводите друзей и
+                        семью. Мы обещаем - будет очень весело!</p>
+
+                    <div class="form-shapes-cont">
+                        <div style="width: 150px; top: 50px" class="form-shapes-cont__shape">
+                            <img src="./media/img/cloud.svg" alt="" />
+                            <span style="left: 50px; top: 70px">3 ноября</span>
+                        </div>
+                        <div style="left: 200px" class="form-shapes-cont__shape">
+                            <img src="./media/img/fire.svg" alt="" />
+                            <span style="left: 50px; top: 90px">Билет <br />
+                                300 Р</span>
+                        </div>
+                        <div style="top: 90px; right: 15px" class="form-shapes-cont__shape">
+                            <img src="./media/img/rhomb.svg" alt="" />
+                            <span style="left: 54px; top: 43px">15:00</span>
+                        </div>
+                        <div style="top: 200px; right: 110px" class="form-shapes-cont__shape">
+                            <img src="./media/img/arrow.svg" alt="" />
+                            <span style="left: 34px; top: 57px; transform: rotate(-15deg)">ТЦ "Гига", Москва</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-seciton__right">
+                    <div class="input-cont">
+                        <span>Имя</span>
+                        <input type="text" />
+                    </div>
+                    <div class="input-cont">
+                        <span>Телефон</span>
+                        <input placeholder="+7 ___ ___ __ __" type="text" />
+                    </div>
+                    <div class="input-cont">
+                        <span>E-mail</span>
+                        <input type="text" />
+                    </div>
+                    <span class="choose-lvl-span">Выберите свой игровой уровень</span>
+                    <div class="difficult-levels-cont">
+                        <fieldset id="group">
+                            <div class="difficult-lvl-cont">
+                                <input type="radio" name="group" />
+                                <span>Новичок</span>
+                            </div>
+                            <div class="difficult-lvl-cont">
+                                <input type="radio" name="group" />
+                                <span>Любитель</span>
+                            </div>
+                            <div class="difficult-lvl-cont">
+                                <input type="radio" name="group" />
+                                <span>Профессионал</span>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="personal-data-cont">
+                        <input type="checkbox" />
+                        <span>Я согласен на обработку персональных данных</span>
+                    </div>
+                    <button class="buy-ticket-btn btn_primary">Купить билет</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Бинго Бонго © 2021 Все права защищены</span>
+        <div class="icons-cont">
+            <img src="./media/img/facebook.svg" alt="" />
+            <img src="./media/img/vk.svg" alt="" />
+            <img src="./media/img/instagram.svg" alt="" />
+        </div>
+        <a href="#">Политика конфеденциальности</a>
+    </footer>
+</body>
+
 </html>
