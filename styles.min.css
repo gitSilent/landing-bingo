@@ -17,6 +17,10 @@
     src: url('./media/fonts/Rubik-Bold.ttf');
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
@@ -42,7 +46,7 @@ span {
 body {
     font-family: 'Rubik';
     /* background-color: #e7e2dc; */
-    background-color: #f0f0eb;
+    /* background-color: #f0f0eb; */
 
     /* background-color: #e4e2e0; */
 }
@@ -200,7 +204,8 @@ main {
     width: 100%;
     margin: auto;
     /* background-color: white; */
-    background-color: #f0f0eb;
+    background-color: white;
+    /* background-color: #f0f0eb; */
 
 }
 
@@ -214,11 +219,21 @@ main {
     /* padding-top: 100px;
     padding-left: 90px;
     padding-right: 90px; */
-    padding: 100px 90px 100px 90px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 90px 80px 90px 80px;
     align-items: end;
     gap: 90px;
 }
-
+.about-div img {
+ width: 100%;
+ height: 100%;
+    /* width: 95% !important;
+    min-width: 250px !important; */
+    /* max-width: 530px;
+    max-height: 400px;
+    width: 45%; */
+}
 .about-div__text h2 {
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -228,19 +243,24 @@ main {
 .about-div__text {
     width: 500px;
     font-weight: 300;
+    margin: 0 auto;
 }
 
 .about-div__img {
+    min-width: 400px;
     max-width: 530px;
     max-height: 400px;
-    width: 45%;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .about-div__cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 35px;
+    gap: 75px; 
+    /* justify-content: space-between; */
     padding-left: 90px;
     padding-right: 90px;
     padding: 50px;
@@ -290,12 +310,13 @@ main {
 .bingo-bongo {
     display: flex;
     margin-top: 50px;
-    height: 500px;
-    background-color: #e4e2e0;
+    min-height: 500px;
+    background-color: #F4F1EA;
     border-radius: 140px;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+    padding: 50px 90px;
 }
 
 .bingo-bongo__desc {
@@ -318,8 +339,10 @@ main {
 .bingo-bongo__desc__cards {
     margin-top: 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     gap: 50px;
+    justify-content: center;
     align-items: center;
 }
 
@@ -351,6 +374,8 @@ main {
 
 }
 
+
+
 .favorite-games h2 {
     text-transform: uppercase;
     font-size: 50px;
@@ -360,17 +385,51 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: right;
 }
 
 .favorite-games__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #e4e2e0;
+    background-color: #F4F1EA;
+    overflow: hidden;
 }
 
-.favorite-games__card {
-    overflow: hidden;
+
+.dino-card{
+    position: relative;
+    max-width: 500px;
+    min-width: 450px;
+    height: 270px;
+    /* min-height: 270px; */
+    border-radius: 30px 30px 10px 170px; 
+}
+.dino-card img{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    /* height: 100%; */
+}
+
+.treasure-card{
+    width: 250px;
+    position: relative;
+    border-radius: 100%;
+    height: 250px
+}
+.sleepyjoe-card{
+    width: 250px;
+    padding: 20px;
+    position: relative; 
+    border-radius: 50px;
+    height: 250px;
+}
+.fav-games__sub-cont {
+    display: flex;
+    align-items: center;
+    display: flex; 
+    gap: 50px
 }
 
 
@@ -409,8 +468,12 @@ main {
 .sale-cont__img-bg {
     /* object-fit: cover; */
     position: absolute;
+    width: 100%;
+    min-width: 1100px;
     z-index: 0;
-    width: 1200px;
+}
+.sale-cont__img-bg-mini{
+    display: none;
 }
 
 .sale-cont__desc {
@@ -457,6 +520,7 @@ main {
     margin-top: 50px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 35px;
     padding-left: 70px;
     padding-right: 70px;
@@ -467,7 +531,8 @@ main {
     flex-direction: column;
     gap: 35px;
     width: fit-content;
-    width: 570px;
+    width:510px;
+    margin: 0 auto;
 }
 
 .month-game__left p {
@@ -481,31 +546,41 @@ main {
     width: 100%;
     height: fit-content;
     border-radius: 15px;
-    background-color: #e4e2e0;
+    background-color: #eeecea;
     padding: 5px;
 
 }
 
 .select__item {
+    border: none;
+    outline: none;
     display: flex;
     flex-direction: row;
     align-items: center;
     height: fit-content;
+    width: 100%;
     padding: 10px 35px 10px 35px;
     border-radius: 15px;
+    background-color: #eeecea;
+    font-family: "Rubik";
+    justify-content: center;
+}
+.select__item:focus {
+    background-color: #f5d467;
 }
 
 .select__item:hover{
     cursor: pointer;
     filter: brightness(95%);
 }
-.select_active {
-    background-color: #f5d467;
-}
+/* .select_active {
+} */
 
 .month-game__right {
     display: flex;
     flex-direction: column;
+    width:500px;
+    margin: 0 auto;
 }
 
 .month-game__right__header {
@@ -520,7 +595,7 @@ main {
     gap: 10px;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     background-color: #e1fafc;
     border-radius: 15px;
     padding: 10px 20px 10px 20px;
@@ -567,6 +642,7 @@ main {
     align-items: center;
     gap: 8px;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .game-ordering-cont {
@@ -593,21 +669,28 @@ main {
 
 
 /* FORM SECTION */
-
+#igroteka{
+    background-image: url('./media/img/waves_footer.png');
+    /* background-repeat: no-repeat; */
+    width: 100vw;
+}
 .form-section {
     margin-top: 100px;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
     padding-left: 70px;
     padding-right: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
     /* background-color: #e7e2dc; */
     padding-top: 200px;
     display: flex;
     gap: 150px;
     flex-direction: row;
+    height: fit-content;
     /* height: fit-content; */
-    background-image: url('./media/img/waves_footer.png');
+    /* background-image: url('./media/img/waves_footer.png'); */
     /* background-color: #f0f0eb; */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .form-seciton__left {
@@ -757,8 +840,54 @@ footer .icons-cont {
     gap: 20px;
 }
 
+@media screen and (max-width: 1035px){
+    .header-line {
+        display: none;
+    }
 
-@media screen and (max-width: 980px) {
+    header {
+        padding-top: 50px;
+    }
+    .header-content {
+        height: 100%;;
+    }
+    .header-line__menu-icon {
+        display: block;
+    }
+
+    .fav-games-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favorite-games {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sale-cont__img-bg{
+        display: none;
+
+    }
+    .sale-cont__img-bg-mini{
+        display: block;
+        width: 100%;
+    }
+
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+        padding: 150px 10px 5px 10px;
+    }
+
+    .form-seciton__right {
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-width: 650px) {
     .header-line {
         display: none;
     }
@@ -776,6 +905,9 @@ footer .icons-cont {
     .about-div {
         flex-direction: column;
         align-items: center;
+    }
+    .about-div__cards{
+        gap: 35px;
     }
 
     .about-div {
