@@ -17,7 +17,7 @@
     src: url('./media/fonts/Rubik-Bold.ttf');
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -58,6 +58,7 @@ body {
 .btn_primary:hover {
     background-color: rgb(230, 82, 24);
 }
+
 .btn_primary:active {
     background-color: rgb(202, 74, 23);
 }
@@ -194,7 +195,6 @@ nav {
 
 /* MAIN CONTENT */
 main {
-    max-width: 1200px;
     width: 100%;
     margin: auto;
     background-color: white;
@@ -202,9 +202,13 @@ main {
 
 .about-section {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-div {
+    max-width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -213,10 +217,12 @@ main {
     align-items: end;
     gap: 90px;
 }
+
 .about-div img {
- width: 100%;
- height: 100%;
+    width: 100%;
+    height: 100%;
 }
+
 .about-div__text h2 {
     text-transform: uppercase;
     margin-bottom: 50px;
@@ -242,7 +248,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 75px; 
+    gap: 75px;
     padding-left: 90px;
     padding-right: 90px;
     padding: 50px;
@@ -287,6 +293,10 @@ main {
 }
 
 /* BINGO BONGO */
+#catalog {
+    display: flex;
+    justify-content: center;
+}
 
 .bingo-bongo {
     display: flex;
@@ -298,6 +308,7 @@ main {
     align-items: center;
     margin-bottom: 50px;
     padding: 50px 90px;
+    max-width: 1200px;
 }
 
 .bingo-bongo__desc {
@@ -355,6 +366,10 @@ main {
 }
 
 
+.fav-games-section {
+    display: flex;
+    justify-content: center;
+}
 
 .favorite-games h2 {
     text-transform: uppercase;
@@ -365,7 +380,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    justify-content: right;
+
 }
 
 .favorite-games__card {
@@ -377,44 +392,57 @@ main {
 }
 
 
-.dino-card{
+.dino-card {
     position: relative;
     max-width: 500px;
     min-width: 450px;
     height: 270px;
-    border-radius: 30px 30px 10px 170px; 
+    border-radius: 30px 30px 10px 170px;
+    margin-left: auto;
 }
-.dino-card img{
+
+.dino-card img {
     position: absolute;
     width: 100%;
     bottom: 0px;
 }
 
-.treasure-card{
+.treasure-card {
     width: 250px;
     position: relative;
     border-radius: 100%;
     height: 250px
 }
-.sleepyjoe-card{
+
+.sleepyjoe-card {
     width: 250px;
     padding: 20px;
-    position: relative; 
+    position: relative;
     border-radius: 50px;
     height: 250px;
 }
+
 .fav-games__sub-cont {
     display: flex;
     align-items: center;
-    display: flex; 
+    display: flex;
     gap: 50px
 }
 
 
 /* SALE */
+.sale-section {
+    display: flex;
+    justify-content: center;
+    background: rgb(239, 236, 229);
+    background: linear-gradient(0deg, rgba(239, 236, 229, 1) 0%, rgba(241, 238, 231, 1) 100%);
+}
 
 .sale-cont {
     position: relative;
+    width: 1200px;
+    height: fit-content;
+    height: 465px;
 }
 
 .sale-50 {
@@ -424,10 +452,7 @@ main {
     top: 50px;
 }
 
-.sale-cont {
-    height: 500px;
-    position: relative;
-}
+
 
 .sale-cont__desc {
     display: flex;
@@ -444,7 +469,8 @@ main {
     min-width: 1100px;
     z-index: 0;
 }
-.sale-cont__img-bg-mini{
+
+.sale-cont__img-bg-mini {
     display: none;
 }
 
@@ -487,6 +513,10 @@ main {
 
 
 /* GAME OF MONTH */
+#month_game {
+    display: flex;
+    justify-content: center;
+}
 
 .month-game {
     margin-top: 50px;
@@ -496,6 +526,7 @@ main {
     gap: 35px;
     padding-left: 70px;
     padding-right: 70px;
+    max-width: 1200px;
 }
 
 .month-game__left {
@@ -503,7 +534,7 @@ main {
     flex-direction: column;
     gap: 35px;
     width: fit-content;
-    width:510px;
+    width: 510px;
     margin: 0 auto;
 }
 
@@ -537,11 +568,12 @@ main {
     font-family: "Rubik";
     justify-content: center;
 }
+
 .select__item:focus {
     background-color: #f5d467;
 }
 
-.select__item:hover{
+.select__item:hover {
     cursor: pointer;
     filter: brightness(95%);
 }
@@ -549,7 +581,7 @@ main {
 .month-game__right {
     display: flex;
     flex-direction: column;
-    width:500px;
+    width: 500px;
     margin: 0 auto;
 }
 
@@ -639,10 +671,11 @@ main {
 
 
 /* FORM SECTION */
-#igroteka{
+#igroteka {
     background-image: url('./media/img/waves_footer.png');
     width: 100vw;
 }
+
 .form-section {
     margin-top: 100px;
     padding-bottom: 150px;
@@ -803,7 +836,7 @@ footer .icons-cont {
     gap: 20px;
 }
 
-@media screen and (max-width: 1035px){
+@media screen and (max-width: 1035px) {
     .header-line {
         display: none;
     }
@@ -811,9 +844,12 @@ footer .icons-cont {
     header {
         padding-top: 50px;
     }
+
     .header-content {
-        height: 100%;;
+        height: 100%;
+        ;
     }
+
     .header-line__menu-icon {
         display: block;
     }
@@ -822,18 +858,22 @@ footer .icons-cont {
         display: flex;
         flex-direction: column;
         align-items: center;
+        /* margin: 0 auto; */
     }
 
     .favorite-games {
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
 
-    .sale-cont__img-bg{
+
+    .sale-cont__img-bg {
         display: none;
 
     }
-    .sale-cont__img-bg-mini{
+
+    .sale-cont__img-bg-mini {
         display: block;
         width: 100%;
     }
@@ -858,9 +898,12 @@ footer .icons-cont {
     header {
         padding-top: 50px;
     }
+
     .header-content {
-        height: 100%;;
+        height: 100%;
+        ;
     }
+
     .header-line__menu-icon {
         display: block;
     }
@@ -869,7 +912,8 @@ footer .icons-cont {
         flex-direction: column;
         align-items: center;
     }
-    .about-div__cards{
+
+    .about-div__cards {
         gap: 35px;
     }
 
